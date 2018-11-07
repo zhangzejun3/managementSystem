@@ -1,4 +1,3 @@
-(function () {
   let $buttons = $('.button-wrapper > button')
   let $slide = $('.slide')
   let $images = $('.slide > img')
@@ -41,4 +40,3 @@
           n += 1
       }, 3000)
   }
-})()
