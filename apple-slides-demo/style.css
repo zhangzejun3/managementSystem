@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #01A2E7
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+header {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 42px;
+  padding: 35px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: relative;
+  top: -19px;
+}
+
+.button-wrapper,
+.gallery {
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.gallery {
+  width: 920px;
+  height: 400px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide > img {
+  width: 100%;
+}
+
+.button-wrapper {
+  width: 920px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,
+.button-wrapper>button {
+  border: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+.button-wrapper>button {
+  width: 60px;
+  background: none;
+}
+
+.button-wrapper>button:focus {
+  outline: none;
+}
+
+.button-wrapper>button>a {
+  display: block;
+  padding-top: 10px;
+  position: relative;
+}
+
+.button-wrapper>button>a.active {
+  box-shadow: inset 0 0 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.button-wrapper>button>a.active:before {
+  content: '';
+  border: 10px solid transparent;
+  border-top-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -3px);
+}
